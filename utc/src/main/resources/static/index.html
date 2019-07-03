@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <div id="page">
+    <h2>UTCdate/ISOdate</h2>
+    <hr>
+    <div>press botton or type a the timestamp in miliseconds</div>
+
+    <hr>
+    <button class='button' onclick='getTimestamp()'>Show timestamp</button>
+
+    <div>Please ype a timestamp</div>
+    <input id='variable'></input>
+    <hr>
+
+    <button class='button' onclick='UTCISO()'>Show UTC & ISO date</button>
+
+    <button class='button' onclick='cleardata()'>clear</button>
+    <hr>
+
+    <div class="row">
+      <div class="column">
+
+        <button class='button' onclick='utc()'>show UCTdate</button>
+        <div>Status</div>
+        <div id='status'></div>
+        <div>UTC date</div>
+        <div id='time'></div>
+        <div id='error'></div>
+
+      </div>
+
+      <div class="column">
+
+        <button class='button' onclick='iso()'>show ISOdate</button>
+        <div>Status</div>
+        <div id='status2'></div>
+        <div>ISO date</div>
+        <div id='time2'></div>
+        <div id='error2'></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src='index.js'></script>
